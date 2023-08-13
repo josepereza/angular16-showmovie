@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { MovieApiServiceService } from 'src/app/service/movie-api-service.service';
 
 @Component({
@@ -18,10 +19,14 @@ export class HomeComponent implements OnInit{
   documentaryMovieResult: any = [];
   sciencefictionMovieResult: any = [];
   thrillerMovieResult: any = [];
-constructor(private service:MovieApiServiceService){
+constructor(
+  private service:MovieApiServiceService,
+  private route:ActivatedRoute
+  ){
  
 }
   ngOnInit(): void {
+ 
     this.service.bannerApiData().subscribe(data=>{
       console.log(data.results)
       this.imagenes=data.results

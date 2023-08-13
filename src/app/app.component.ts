@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, HostListener, Inject } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -42,4 +43,7 @@ export class AppComponent {
   
    
   }
+
+
+  movieName = new FormControl('');
 }

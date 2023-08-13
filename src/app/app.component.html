@@ -14,12 +14,14 @@
         </li>
        
         <li class="nav-item">
-          <a class="nav-link " aria-disabled="true" routerLink="/search">Search</a>
+          <a class="nav-link " aria-disabled="true" routerLink="/search"
+         
+          >Search</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"  [formControl]="movieName">
+        <a class="btn btn-outline-success"  [routerLink]="['/search']"[queryParams]="{ movieName:movieName.value}">Search</a>
       </form>
     </div>
   </div>
