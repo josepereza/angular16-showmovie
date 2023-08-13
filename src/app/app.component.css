@@ -1,0 +1,27 @@
+.titulo {
+  color: rgb(212, 27, 27);
+
+  font-weight: bold !important;
+}
+
+.navbar .nav-item .nav-link {
+  color: rgb(212, 27, 27);
+}
+
+.navbar {
+  background-color: transparent !important;
+  transition-duration: 1s;
+}
+
+
+.hdr {
+  padding: 20px;
+  background-color: transparent !important; 
+}
+
+.hdrScroll {
+  padding: 20px;
+  background-color: rgb(8, 8, 8) !important;
+
+ 
+}
